@@ -1,16 +1,138 @@
-.navbar{
+.navbar, .hero{
+    background-color: #1F2937;
     display: flex;
-    padding: 20px 100px 20px 100px;
-  
+    
+}
+.hero{
+    justify-content: space-between;
+    padding: 0 150px 60px 150px;
+    align-items: center;
+}
+.navbar{
+    
+    padding: 20px 180px 20px 180px;
+    align-items: center;
 }
 
 body{
     display: flex ;
     flex-direction: column;
+    margin: auto;
 }
 
 .header-links{
-    display: flex;
     margin-left: auto;
-    justify-content: space-between;
+    font-size: 18px;
+}
+.header-links a{
+    color: #E5E7EB;
+    padding: 0 10px 0 10px;
+    text-decoration: none;
+}
+.header-links a:hover{
+    color: #3882F6;
+}
+.header-logo{
+    border: 5px solid red;
+    border-radius: 50%;
+    transition: all .2s;
+}
+.header-logo:hover{
+    transform: scale(1.1);
+}
+
+.hero-desc h1{
+    font-size: 48px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+.hero-desc p{
+    font-size: 18px;
+    color: #E5E7EB  ;
+}
+.hero-desc button{
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    width: 80px;
+    height: 30;
+}
+
+.info{
+    padding: 0 0 50px 0 ;
+}
+.info h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #1F2937;
+}
+.info-parts{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.info-parts div{
+    display: flex;
+    flex-direction: column;
+    width: 160px;
+    padding: 0 20px 0 20px;
+}
+.info-parts img{
+    border: 5px solid #3882F6;
+    border-radius: 8px;
+}
+
+.quote{
+    background-color: #E5E7EB;
+    padding: 60px 250px 60px 250px;
+}
+.quote p{
+    font-size: 36px;
+    font-style: italic;
+}
+.quote strong{
+    float: right;
+}
+
+.sign-up-container{
+    padding: 80px 200px 80px 200px;
+}
+.sign-up{
+    display: flex;
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sign-up-text h3{
+    font-weight: bold;
+    margin: auto;
+    padding-top: 30px;
+}
+.sign-up-text p{
+    margin: auto;
+    padding-bottom: 30px;
+}
+.sign-up-button button{
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    width: 80px;
+    height: 30;
+    border: 2px solid white;
+}
+.sign-up-button button:hover{
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+
+footer{
+    background-color: #1F2937;
+    color: #E5E7EB;
+    text-align: center;
 }
